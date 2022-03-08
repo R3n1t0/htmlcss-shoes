@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MENU */
+header{
+  position: fixed;
+  text-align: right;
+  width: 100%;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  line-height: 100px;
+  margin-right: 20px;
+  
+}
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+
+main .product{
+ width: 100%;
+ text-align: center;
+ padding: 100px;
+}
+
+main .one{
+  background-color: red;
+  color: yellow;
+}
+
+main .two{
+  background-color: green;
+  color: yellow;
+}
+
+main .three{
+  background-color: yellow;
+  color: green;
+}
+main .product div h3{
+  font-size: 50px;
+}
