@@ -13,8 +13,9 @@ html{
 }
 
 /* MENU */
-header{
+nav{
   position: fixed;
+  z-index: 999;
   text-align: right;
   width: 100%;
 }
@@ -29,54 +30,59 @@ nav ul li{
 nav ul li a{
   font-size: 20px;
   text-decoration: none;
-  padding: 5px;
-}
-
-nav ul li a span{
   display: inline-block;
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: white;
   color: black;
+  padding: 5px;
+  margin: 0 20px;
 }
 
-nav ul li a span:hover{
-  box-shadow: 3px 3px 3px darkgrey;
+nav ul li a:hover{
+  box-shadow: 0px 7px 5px darkgrey;
 }
 
-nav ul li a span:active{
+nav ul li a:active{
   background-color: darkgray;
 }
 
-
-
 /* PRODUCTS */
 
-main .product{
-  width: 100%;
+section{
+  position: relative;
   height: 100vh;
   text-align: center;
 }
 
-main .one{
+
+section .block img{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+}
+
+#first{
   background-color: red;
   color: yellow;
 }
 
-main .two{
+#second{
   background-color: green;
   color: yellow;
 }
 
-main .three{
+#third{
   background-color: yellow;
   color: green;
 }
 
 main .product div h3{
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 50px;
 }
